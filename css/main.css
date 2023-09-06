@@ -189,3 +189,37 @@ a:hover i {
 }
 
 /* ---End of Header--- */
+
+
+
+/* Student Directory page */
+
+
+/* Style the container for the student list */
+.student-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0px 0px 20px;
+}
+
+/* Style each student item */
+.student-item {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.student-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.student-item a:hover {
+    color: #B3272D;
+}
+
+/* ---End of Student Directory page--- */

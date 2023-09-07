@@ -4,6 +4,7 @@
     1. General Styles (Normalize)
     2. Header
     3. Footer
+    ?. Case Study
 
 /* 1. ---General Styles--- */
 
@@ -336,3 +337,13 @@ a:hover i {
 
 /* End of carrousel testimonials home */
 
+
+/* ?. Case Study Page */
+
+/* Style Profiel Picture and Background Information */
+#profile-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%
+}

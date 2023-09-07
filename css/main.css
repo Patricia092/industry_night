@@ -91,6 +91,9 @@ section p {
 header {
     background-color: #E2231A;
     font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 a {
@@ -223,3 +226,113 @@ a:hover i {
 }
 
 /* ---End of Student Directory page--- */
+
+
+/* hero home*/
+
+.text-container {
+    display: flex;
+    justify-content: left;
+    margin: 1% 0 1% 0;
+}
+
+.text-container h3 {
+    margin: 0;
+    font-size: 8vw;
+    color: rgba(225, 225, 225, .01);
+    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-position: left top;
+    }
+
+    25% {
+        background-position: right bottom;
+    }
+
+    50% {
+        background-position: left bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+}
+
+/* End of hero home*/
+
+/* 2024 GRADUATION SHOWCASE COMING SOON  */
+
+.coming-soon {
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* End of 2024 GRADUATION SHOWCASE COMING SOON  */
+
+/* carrousel testimonials home */
+
+.testimonial-container {
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 18px;
+}
+
+.testimonial-author {
+    font-style: italic;
+}
+
+
+
+.testimonial-counter {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.counter-square {
+    width: 18px;
+    height: 8px;
+    margin: 0 5px;
+    background-color: #ccc;
+    
+    cursor: pointer;
+}
+
+.counter-square.active {
+    background-color: #434343;
+}
+
+.testimonial-btn-counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* End of carrousel testimonials home */
+

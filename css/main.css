@@ -373,6 +373,25 @@ a:hover i {
     border-radius: 50%
 }
 
+/*
+article p {
+}
+
+#ul-nav-tools{
+}
+
+#profile-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%
+}
+
+#stage-three {
+    height: 100px;
+    width: fit-content;
+}
+*/
 
 /* 4. ---Mobile Menu--- */
 
@@ -650,8 +669,6 @@ input[type=checkbox]:checked~#overlay-button span:after {
 }
 
 
-
-
 /* Media Queries */
 
 @media screen and (min-width: 1200px) {
@@ -674,5 +691,4 @@ input[type=checkbox]:checked~#overlay-button span:after {
 }
 
 /* End of Media Queries  */
-
 

@@ -405,7 +405,7 @@ a:hover i {
 
 /* ?. Case Study Page */
 
-/* Style Profiel Picture and Background Information */
+/* Style Profile Picture and Background Information */
 #profile-circle {
     width: 100px;
     height: 100px;
@@ -413,25 +413,33 @@ a:hover i {
     border-radius: 50%
 }
 
-/*
-article p {
+.hero-title {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 304px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-#ul-nav-tools{
+.line-separator-b {
+    margin-bottom: 30px;
 }
 
-#profile-circle {
-    width: 100px;
-    height: 100px;
-    background-color: #3498db;
-    border-radius: 50%
+.line-separator-t {
+    margin-top: 30px;
 }
 
-#stage-three {
-    height: 100px;
-    width: fit-content;
+.bipotx {
+    display: flex;
+    align-self: center;
 }
-*/
+
+.p-goals ul li{
+    list-style-type: none
+}
+
 
 /* 4. ---Mobile Menu--- */
 

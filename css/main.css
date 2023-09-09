@@ -12,6 +12,8 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #ffffff;
+    font-family: ‘Satoshi’, sans-serif;
+    color: #333333;
 }
 
 img,
@@ -30,6 +32,7 @@ h4,
 h5 {
     margin: 0px;
     padding: 0px;
+    font-family: ‘Satoshi’, sans-serif;
 }
 
 ul {
@@ -69,7 +72,7 @@ section p {
     border: none;
     border-radius: 20px;
     font-size: 14px;
-    color: #E3DDCF;
+    color: #ffffff;
     padding: 11px 50px;
     text-align: center;
     text-decoration: none;
@@ -81,6 +84,10 @@ section p {
     background-color: #ed202d;
     color: white;
     transform: scale(1);
+}
+
+.title {
+    font-family: ‘Anton’, sans-serif;
 }
 
 
@@ -202,7 +209,7 @@ a:hover i {
     transform: scaleX(1);
     transform-origin: bottom left;
     background-color: #b3272d;
-    
+
     color: #ffffff;
 }
 
@@ -342,7 +349,7 @@ a:hover i {
 
 .coming-soon-text {
     margin-top: 2%;
-    }
+}
 
 
 
@@ -354,16 +361,23 @@ a:hover i {
 
 .testimonial-container {
     max-width: 100%;
-    height: 300px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    border: 1px solid #ccc;
+    margin-top: 5%;
+   
+}
 
+.testimonial-container h2 {
+    color: #b3272d;
+    text-align: left;
+    margin-bottom: 3%;
 }
 
 .testimonial {
     margin-bottom: 20px;
+    margin: 25px 0 30px 0;
+    height: 100%;
 }
 
 .testimonial-text {
@@ -383,21 +397,40 @@ a:hover i {
 }
 
 .counter-square {
-    width: 18px;
-    height: 8px;
+    width: 1.3em;
+    height: 0.5em;
     margin: 0 5px;
-    background-color: #ccc;
-
+    background-color: #bfbfbf;
     cursor: pointer;
 }
 
 .counter-square.active {
-    background-color: #434343;
+    background-color: #646469;
 }
 
 .testimonial-btn-counter {
     display: flex;
     justify-content: space-between;
+    height: 100px;
+}
+
+.btn-testimonial {
+    background-color: #b3272d;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    padding: 11px 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-testimonial:hover {
+    background-color: #ed202d;
+    color: white;
+    transform: scale(1);
 }
 
 /* End of carrousel testimonials home */
@@ -638,6 +671,19 @@ input[type=checkbox]:checked~#overlay-button span:after {
     font-size: 1.1em;
 }
 
+.video-s {
+    padding: 56.25% 0 0 0;
+    position: relative;
+}
+
+.video-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* End of Video  */
 
 
@@ -796,6 +842,29 @@ input[type=checkbox]:checked~#overlay-button span:after {
         margin: 2% 0 2% 0;
     }
 
+    /* Testimonial */
+
+    .testimonial {
+        margin: 30px 0 40px 0;
+    }
+
+    .testimonial-text {
+        font-size: 20px;
+        margin: 10px 20px 10px 20px;
+    }
+
+    .counter-square {
+        width: 1.7em;
+        height: 0.6em;
+        margin: 0 5px;
+    }
+
+    .btn-testimonial {
+        font-size: 1em;
+        padding: 11px 30px;
+
+    }
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -820,6 +889,30 @@ input[type=checkbox]:checked~#overlay-button span:after {
     .coming-soon-style {
         margin: 2% 0 2% 0;
     }
+
+
+    /* Testimonial */
+
+    .testimonial {
+        margin: 30px 0 45px 0;
+    }
+    .testimonial-text {
+        font-size: 20px;
+        margin: 10px 20px 10px 20px;
+    }
+
+    .counter-square {
+        width: 1.7em;
+        height: 0.6em;
+        margin: 0 5px;
+    }
+
+    .btn-testimonial {
+        font-size: 1em;
+        padding: 11px 30px;
+
+    }
+
 
 }
 

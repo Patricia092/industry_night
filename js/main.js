@@ -124,7 +124,9 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 
+// video
 
+src="https://player.vimeo.com/api/player.js"
 
 
 

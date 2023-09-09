@@ -50,11 +50,11 @@ nextButton.addEventListener("click", () => {
 
 // card slider
 
-const wrapper = document.querySelector(".wrapper");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card-selected").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper .icon");
-const carouselChildrens = [...carousel.children];
+const wrapper = document.querySelector(".wrapper"),
+carousel = document.querySelector(".carousel"),
+firstCardWidth = carousel.querySelector(".card-selected").offsetWidth,
+arrowBtns = document.querySelectorAll(".wrapper .icon"),
+carouselChildrens = [...carousel.children];
 
 let isDragging = false, startX, startScrollLeft, timeoutId;
 
@@ -117,7 +117,6 @@ const infiniteScroll = () => {
     }
 
 }
-
 
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);

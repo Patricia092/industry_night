@@ -64,6 +64,25 @@ section p {
     padding-left: 15px;
 }
 
+.btn {
+    background-color: #b3272d;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #E3DDCF;
+    padding: 11px 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ed202d;
+    color: white;
+    transform: scale(1);
+}
+
 
 /* ---End of General Styles--- */
 
@@ -111,6 +130,7 @@ a {
 
 .items:hover {
     color: white;
+    border-color: #b3272d;
 }
 
 .ul-navigation {
@@ -181,7 +201,8 @@ a:hover i {
 .animation li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    background-color: #b1b1b1;
+    background-color: #b3272d;
+    
     color: #ffffff;
 }
 
@@ -301,12 +322,31 @@ a:hover i {
 
 .coming-soon {
     width: 100%;
-    background-color: rgb(235, 235, 235);
+    background-color: #B3272D;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 120px;
+    padding: 1% 0 1% 0;
+
 }
+
+.coming-soon-style {
+    margin: 5% 0 5% 0;
+}
+
+.coming-soon-title {
+    font-size: 3.2vw;
+    color: white;
+
+}
+
+.coming-soon-text {
+    margin-top: 2%;
+    }
+
+
+
+
 
 /* End of 2024 GRADUATION SHOWCASE COMING SOON  */
 
@@ -533,7 +573,6 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
 .video-text {
     font-size: 1.1em;
-    color: blue;
 }
 
 /* End of Video  */
@@ -676,19 +715,124 @@ input[type=checkbox]:checked~#overlay-button span:after {
     /* video text */
     .video-text {
         font-size: 1.25em;
-       
+
     }
-   
+
+    /* Coming soon section */
+
+    .coming-soon-title {
+        font-size: 28px;
+    }
+
+    .coming-soon-text {
+        margin: 8% 0 12% 0;
+
+    }
+
+    .coming-soon-style {
+        margin: 2% 0 2% 0;
+    }
+
 }
 
 @media screen and (min-width: 1920px) {
 
-     /* video text */
+    /* video text */
     .video-text {
         font-size: 1.25em;
 
     }
+
+    /* Coming soon section */
+
+    .coming-soon-title {
+        font-size: 30px;
+    }
+
+    .coming-soon-text {
+        margin: 8% 0 12% 0;
+
+    }
+
+    .coming-soon-style {
+        margin: 2% 0 2% 0;
+    }
+
 }
 
 /* End of Media Queries  */
 
+/* Footer */
+
+.footer-style {
+    background-color: #F5F5F5;
+    padding-top: 5em;
+}
+
+.copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    background-color: #b3272d;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+.nav-list-style ul li {
+    list-style-type: none;
+}
+
+.nav-list-style ul li a {
+    text-decoration: none;
+    font-size: 26px;
+    color: #333333;
+}
+
+.nav-list-a:hover {
+    transform: scale(1);
+    color: #6A614A;
+}
+
+.nav-list-style {
+    margin-bottom: 12%;
+}
+
+.social-media-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.social-media-style li a {
+    margin-right: 16px;
+    text-align: center;
+}
+
+.social-media-style li {
+    list-style-type: none;
+}
+
+.footer-icon {
+
+    border-radius: 50%;
+    background-color: #ED202D;
+    border: none;
+    color: white;
+    padding: 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer-icon i {
+    transition: all 0.3s linear;
+}
+
+.footer-icon:hover i {
+    transform: scale(1);
+    color: #bababa;
+}
+
+/* End of footer */

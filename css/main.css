@@ -406,21 +406,61 @@ a:hover i {
 /* ?. Case Study Page */
 
 /* Style Profile Picture and Background Information */
-#profile-circle {
-    width: 100px;
-    height: 100px;
-    background-color: #3498db;
-    border-radius: 50%
+
+/* hero case study */
+.hero-title {
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 150px;
 }
 
-.hero-title {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    height: 304px;
+.hero-title::before {
+    content: "";
+    background-image: url('../images/hero_bkgrd.jpg');
     background-size: cover;
+    background-position: center center;
+    opacity: 0.4;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 304px;
+    z-index: -1;
+    background-position-x: center;
+    background-position-y: center;
+    }
+
+.text-container-cs {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+    margin: 1% 0 1% 0;
+}
+
+.text-container-cs h3 {
+    margin: 0;
+    font-size: 8vw;
+    color: rgba(225, 225, 225, .01);
+    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.bipotx {
+    display: flex;
+    align-self: center;
+}
+
+/* Project Description Section */
+.project-des-con {
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 20px;
 }
 
 .line-separator-b {
@@ -431,15 +471,30 @@ a:hover i {
     margin-top: 30px;
 }
 
-.bipotx {
-    display: flex;
-    align-self: center;
+.p-goals {
+    border-right: 1px solid #707070;
 }
 
-.p-goals ul li{
-    list-style-type: none
+.p-goals ol {
+    margin-bottom: 50px;
 }
 
+.tech-text {
+    text-align: center;
+}
+
+/* Third Section Case Study */
+
+/*.third-con {
+    border-right: 1px solid #707070;
+}
+*/
+.third-con p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* End of Case Study Page */
 
 /* 4. ---Mobile Menu--- */
 

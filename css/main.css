@@ -504,10 +504,6 @@ a:hover i {
 /* Style Profile Picture and Background Information */
 
 /* hero case study */
-#case-study {
-    padding-top: 150px;
-}
-
 .hero-title {
     text-align: center;
     padding-top: 200px;
@@ -535,21 +531,20 @@ a:hover i {
 .text-container-cs {
     display: flex;
     justify-content: center;
-    margin: 2% 0 0 0;
+    margin: 2.8% 0 0 0;
 }
 
 .text-container-cs h3 {
     margin: 0;
     font-size: 8vw;
-    color: rgba(225, 225, 225, .01);
-    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: animate 15s ease-in-out infinite;
+    color: #b3272d;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
+}
+
+.title-hero-case {
+    padding-top: 150px;
 }
 
 /* Style HERO image 1*/
@@ -637,7 +632,7 @@ a:hover i {
     font-size: 50px;
     color: #FFFFFF;
     position: absolute;
-    top: 270%; 
+    top: 300%; 
     left: 60%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.2); 

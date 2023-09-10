@@ -71,13 +71,14 @@ section p {
     background-color: #b3272d;
     border: none;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 11px;
     color: #ffffff;
-    padding: 11px 50px;
+    padding: 10px 26px;
     text-align: center;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    font-weight: 300;
 }
 
 .btn:hover {
@@ -117,7 +118,7 @@ section p {
 
 header {
     background-color: white;
-    font-size: 18px;
+    font-size: 1em;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -131,7 +132,7 @@ a {
 .items {
     color: #707070;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -145,7 +146,7 @@ a {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
 
 }
 
@@ -154,7 +155,7 @@ a {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 20px 0px;
     padding: 0;
 
 }
@@ -283,21 +284,72 @@ a:hover i {
 
 /* hero home*/
 
+.hero-img>* {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+}
+
+.hero-img {
+    display: grid;
+    grid-column: span 2;
+    position: relative;
+}
+
+.fanshawe-title {
+    font-size: 2.4vw;
+    text-align: center;
+    margin: 18% 0 3% 0;
+    color: #4B4B4B;
+}
+
+.title-hero-home {
+    text-align: center;
+}
+
+.date-style {
+    font-size: 1.6vw;
+    text-align: center;
+    margin: 2% 0 5% 0;
+}
+
+.april-style {
+    color: #4B4B4B;
+    font-weight: 900;
+}
+
+.btn-registration {
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+
+.btn-registration1 {
+    display: flex;
+    justify-content: start;
+}
+
+
 .text-container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     margin: 1% 0 1% 0;
 }
 
 .text-container h3 {
     margin: 0;
-    font-size: 8vw;
+    font-size: 8.5vw;
     color: rgba(225, 225, 225, .01);
     background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
     background-repeat: repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: animate 15s ease-in-out infinite;
+    animation: animate 60s ease-in-out infinite;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
@@ -349,7 +401,13 @@ a:hover i {
 
 .coming-soon-text {
     margin-top: 2%;
+    font-size: 1.6vw;
 }
+
+.btn-learn {
+    margin-top: 10%;
+}
+
 
 
 
@@ -365,10 +423,10 @@ a:hover i {
     text-align: center;
     padding: 20px;
     margin-top: 5%;
-   
+
 }
 
-.testimonial-container h2 {
+.testimonial-container h3 {
     color: #b3272d;
     text-align: left;
     margin-bottom: 3%;
@@ -462,7 +520,7 @@ a:hover i {
     z-index: -1;
     background-position-x: center;
     background-position-y: center;
-    }
+}
 
 .text-container-cs {
     display: flex;
@@ -554,7 +612,7 @@ a:hover i {
 #overlay-button {
     position: absolute;
     right: 1em;
-    padding: 38px 11px;
+    padding: 50px 11px;
     z-index: 999;
     cursor: pointer;
     user-select: none;
@@ -562,9 +620,9 @@ a:hover i {
 
 #overlay-button span {
     height: 3px;
-    width: 25px;
+    width: 33px;
     border-radius: 2px;
-    background-color: #E3DDCF;
+    background-color: #888888;
     position: relative;
     display: block;
     transition: all 0.2s ease-in-out;
@@ -582,9 +640,9 @@ a:hover i {
 #overlay-button span:before,
 #overlay-button span:after {
     height: 3px;
-    width: 25px;
+    width: 33px;
     border-radius: 2px;
-    background-color: #E3DDCF;
+    background-color: #888888;
     position: absolute;
     content: "";
     transition: all 0.2s ease-in-out;
@@ -593,8 +651,9 @@ a:hover i {
 #overlay-button:hover span,
 #overlay-button:hover span:before,
 #overlay-button:hover span:after {
-    background: #999999;
+    background: #888888;
 }
+
 
 input[type=checkbox] {
     display: none;
@@ -663,6 +722,10 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
 /* Video Home */
 
+.video-background {
+    background-color: #CECECE;
+}
+
 .prom-video {
     margin: 8% 0 8% 0;
 }
@@ -684,10 +747,60 @@ input[type=checkbox]:checked~#overlay-button span:after {
     height: 100%;
 }
 
+.video-text-style {
+    font-size: 1.5vw;
+    margin-left: 15%;
+}
+
+.video-text-style1 {
+    font-size: 1.1vw;
+    margin-right: 15%;
+    margin-bottom: 25%;
+}
+
+.video-text-style-mobile {
+    font-size: 3vw;
+    margin-left: 5%;
+}
+
+.video-text-style-mobile1 {
+    font-size: 2.4vw;
+    margin: 5% 2% 0 5%;
+}
+
+.btn-activities-1 {
+    margin: 8% 0 10% 0;
+
+}
+
+
+
+.activities {
+    margin-top: 3%;
+}
+
+.btn-activities {
+    margin-top: 5%;
+}
+
 /* End of Video  */
 
 
-/* card slider */
+/* card slider selected works home */
+
+.selected-title {
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5%;
+    font-weight: 300;
+}
+
+.selected-text {
+    font-size: 1.8vw;
+    text-align: center;
+    margin: 0 5% 8% 5%;
+}
 
 .wrapper {
     width: 100%;
@@ -722,10 +835,11 @@ input[type=checkbox]:checked~#overlay-button span:after {
     right: -22px;
 }
 
+
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
+    grid-auto-columns: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 16px;
@@ -768,8 +882,8 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
 
 .card-selected .img img {
-    width: 300px;
-    height: 300px;
+    width: 50vw;
+    height: 50vw;
     object-fit: cover;
     border: 4px solid #fff;
 }
@@ -787,39 +901,117 @@ input[type=checkbox]:checked~#overlay-button span:after {
     font-size: 1.31rem;
 }
 
-.card-selected .title-selected {
-    margin: 20px 10% 0 10%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn-add {
-    background-color: #0A284B;
-    border: none;
-    font-size: 14px;
+.card-selected .title-selected-mobile {
+    top: 50%;
+    left: 25%;
+    position: absolute;
+    font-size: 2vw;
     color: white;
-    padding: 11px 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
 }
 
-.btn-plus i {
-    color: #0A284B;
-    font-size: 32px;
-    padding: 2px 10px;
-    text-align: center;
-    text-decoration: none;
-    margin: 4px 2px;
-    border-radius: 0px;
-    cursor: pointer;
+.show-desk-tab {
+    display: none;
 }
 
 
 /* Media Queries */
 
+@media screen and (min-width: 768px) {
+
+
+    /* Agenda */
+    .agenda {
+        display: block !important;
+    }
+
+    /* Selected works */
+
+    .show-desk-tab {
+        display: block;
+    }
+
+    /* Card slider */
+
+    .wrapper .carousel {
+        grid-auto-columns: calc(100% / 2);
+    }
+
+    .card-selected .img img {
+        width: 41vw;
+        height: 41vw;
+    }
+
+    .card-selected .title-selected {
+        top: 50%;
+        left: 20%;
+        position: absolute;
+        font-size: 1vw;
+        color: white;
+    }
+
+
+    /* Footer */
+
+    .logo-footer-img {
+        width: 190px;
+        height: 190px;
+    }
+
+
+    .social {
+        display: block !important;
+        margin-bottom: 30%;
+        text-align: center;
+        margin-top: 20%
+    }
+
+    .nav-list-style {
+        margin-top: 28%;
+        text-align: left !important;
+    }
+
+    .footer-style {
+        padding-top: 0 !important;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 11px 30px;
+    }
+
+
+
+
+
+}
+
 @media screen and (min-width: 1200px) {
+
+    /* Hero Image */
+
+    .hero-img img {
+        width: 100%;
+        height: 100%;
+        max-height: 700px;
+    }
+
+
+    .fanshawe-title {
+        font-size: 2.3vw;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .date-style {
+        font-size: 1.6vw;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    /* Agenda */
+    .agenda {
+        display: block !important;
+    }
 
     /* video text */
     .video-text {
@@ -840,6 +1032,12 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
     .coming-soon-style {
         margin: 2% 0 2% 0;
+    }
+
+    /* Selected works */
+
+    .show-desk-tab {
+        display: block;
     }
 
     /* Testimonial */
@@ -865,9 +1063,75 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
     }
 
+    /* Footer */
+
+    .logo-footer-img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .social {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 20%;
+        margin-top: 0;
+    }
+
+    .nav-list-style {
+        margin-top: 13%;
+    }
+
+    /* Card slider */
+
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 3) - 12px);
+    }
+
+    .card-selected .img img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .card-selected .title-selected {
+        top: 50%;
+        left: 20%;
+        position: absolute;
+        font-size: 1vw;
+        color: white;
+    }
+
+
 }
 
+
 @media screen and (min-width: 1920px) {
+
+
+    /* Hero Image */
+
+    .hero-img img {
+        width: 100%;
+        height: 100%;
+        max-height: 900px;
+    }
+
+    .fanshawe-title {
+        font-size: 2.1vw;
+        text-align: center;
+        margin-top: 12%;
+    }
+
+    .date-style {
+        font-size: 1.6vw;
+        text-align: center;
+
+    }
+
+    /* Agenda */
+    .agenda {
+        display: block !important;
+    }
 
     /* video text */
     .video-text {
@@ -890,12 +1154,20 @@ input[type=checkbox]:checked~#overlay-button span:after {
         margin: 2% 0 2% 0;
     }
 
+    /* Selected works */
+
+    .show-desk-tab {
+        display: block;
+    }
+
+
 
     /* Testimonial */
 
     .testimonial {
         margin: 30px 0 45px 0;
     }
+
     .testimonial-text {
         font-size: 20px;
         margin: 10px 20px 10px 20px;
@@ -913,6 +1185,33 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
     }
 
+    /* Footer */
+
+    .social {
+        display: block !important;
+        margin-bottom: 20%;
+        text-align: center;
+    }
+
+    /* Card slider */
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 3) - 12px);
+    }
+
+
+    .card-selected .img img {
+        width: 30vw;
+        height: 25vw;
+    }
+
+    .card-selected .title-selected {
+        top: 50%;
+        left: 20%;
+        position: absolute;
+        font-size: 1vw;
+        color: white;
+    }
+
 
 }
 
@@ -920,9 +1219,12 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
 /* Footer */
 
+
+
 .footer-style {
-    background-color: #F5F5F5;
+    background-color: #CECECE;
     padding-top: 5em;
+
 }
 
 .copyright {
@@ -935,6 +1237,22 @@ input[type=checkbox]:checked~#overlay-button span:after {
     font-weight: lighter;
 }
 
+.social {
+    display: none;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer-img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
 .nav-list-style ul li {
     list-style-type: none;
 }
@@ -945,13 +1263,18 @@ input[type=checkbox]:checked~#overlay-button span:after {
     color: #333333;
 }
 
+.nav-list-a {
+    line-height: 1.6em;
+}
+
 .nav-list-a:hover {
     transform: scale(1);
-    color: #6A614A;
+    color: #B3272D;
 }
 
 .nav-list-style {
     margin-bottom: 12%;
+    text-align: center;
 }
 
 .social-media-style {
@@ -959,8 +1282,9 @@ input[type=checkbox]:checked~#overlay-button span:after {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 15%;
+    margin: 3% 0 0 4%;
 }
+
 
 .social-media-style li a {
     margin-right: 16px;
@@ -972,7 +1296,6 @@ input[type=checkbox]:checked~#overlay-button span:after {
 }
 
 .footer-icon {
-
     border-radius: 50%;
     background-color: #ED202D;
     border: none;
@@ -992,3 +1315,31 @@ input[type=checkbox]:checked~#overlay-button span:after {
 }
 
 /* End of footer */
+
+/* this is interactive media design */
+
+.innovation {
+    margin: 8% 0 6% 0;
+}
+
+.innovation p {
+    font-size: 3vw;
+}
+
+.red-font {
+    color: #ED202D;
+    font-weight: 900;
+}
+
+.innovation-style {
+    background-color: #CECECE;
+}
+
+.btn-innovation {
+    margin-bottom: 6%;
+}
+
+/* Agenda */
+.agenda {
+    display: none;
+}

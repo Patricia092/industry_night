@@ -67,10 +67,6 @@ section p {
     padding-left: 15px;
 }
 
-section p {
-    padding: 50px;
-}
-
 .btn {
     background-color: #b3272d;
     border: none;
@@ -134,7 +130,6 @@ a {
 }
 
 .items {
-    color: #707070;
     text-decoration: none;
     font-weight: 300;
     font-style: normal;
@@ -245,7 +240,7 @@ a:hover i {
 .animation-tablet li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-    background-color: #b1b1b1;
+    background-color: #B3272D;
     color: #ffffff;
 }
 
@@ -261,15 +256,15 @@ a:hover i {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 20px 0px 0px 20px;
+    margin: 8% 0 0 5%;
 }
 
 /* Style each student item */
 .student-item {
-    margin: 10px;
-    padding: 10px;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.7vw;
+    color: #333333;
+    margin-bottom: 5%;
 }
 
 .student-item a {
@@ -282,6 +277,43 @@ a:hover i {
 .student-item a:hover {
     color: #B3272D;
 }
+
+.title-students {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 20%;
+    font-size: 7vw;
+    color: #b3272d;
+    letter-spacing: .4rem;
+}
+
+.hero-img-students>* {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.hero-img-students img {
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+}
+
+.hero-img-students {
+    display: grid;
+    grid-column: span 2;
+    position: relative;
+}
+
+.view-btn {
+    margin: 2% 0 10% 0;
+}
+
+.view-more-btn {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* ---End of Student Directory page--- */
 
@@ -330,7 +362,7 @@ a:hover i {
 
 .btn-registration {
     display: flex;
-    justify-content: left;
+    justify-content: end;
     margin-right: 5%;
 }
 
@@ -394,6 +426,10 @@ a:hover i {
 
 }
 
+.agenda-style {
+    margin: 5% 0 5% 0;
+}
+
 .coming-soon-style {
     margin: 5% 0 5% 0;
 }
@@ -405,17 +441,13 @@ a:hover i {
 }
 
 .coming-soon-text {
-    margin-top: 2%;
-    font-size: 1.6vw;
+    margin: 5%;
+    font-size: 2.5vw;
 }
 
 .btn-learn {
     margin-top: 10%;
 }
-
-
-
-
 
 
 /* End of 2024 GRADUATION SHOWCASE COMING SOON  */
@@ -553,7 +585,7 @@ a:hover i {
 }
 
 /* Style HERO image 1*/
-.text-container-cs::before{
+.text-container-cs::before {
     content: "";
     background-image: url('../images/hero1.png');
     background-size: cover;
@@ -613,7 +645,7 @@ a:hover i {
 
 .third-con img {
     width: 100%;
-    display: block; 
+    display: block;
     width: 100%;
 }
 
@@ -621,8 +653,8 @@ a:hover i {
 .p-third-text::before {
     content: '“';
     font-size: 150px;
-    position: absolute; 
-    z-index: -1; 
+    position: absolute;
+    z-index: -1;
     opacity: 0.7;
 }
 
@@ -637,10 +669,10 @@ a:hover i {
     font-size: 50px;
     color: #FFFFFF;
     position: absolute;
-    top: 270%; 
+    top: 270%;
     left: 60%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
 
@@ -872,7 +904,7 @@ input[type=checkbox]:checked~#overlay-button span:after {
     font-size: 1.8vw;
     text-align: center;
     margin: 0 5% 8% 5%;
-    padding: 0;    
+    padding: 0;
 }
 
 .wrapper {
@@ -974,17 +1006,17 @@ input[type=checkbox]:checked~#overlay-button span:after {
     font-size: 1.31rem;
 }
 
-.card-selected .title-selected-mobile {
-    top: 50%;
-    left: 25%;
-    position: absolute;
-    font-size: 2vw;
-    color: white;
-}
-
 .show-desk-tab {
     display: none;
 }
+
+.card-selected .title-selected {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 2.1vw;
+    color: #4B4B4B;
+}
+
 
 
 /* Media Queries */
@@ -995,6 +1027,11 @@ input[type=checkbox]:checked~#overlay-button span:after {
     /* Agenda */
     .agenda {
         display: block !important;
+    }
+
+    .coming-soon-text {
+        margin: 5% 0 10% 0;
+        font-size: 2vw;
     }
 
     /* Selected works */
@@ -1015,11 +1052,8 @@ input[type=checkbox]:checked~#overlay-button span:after {
     }
 
     .card-selected .title-selected {
-        top: 50%;
-        left: 20%;
-        position: absolute;
-        font-size: 1vw;
-        color: white;
+        margin-top: 5%;
+        font-size: 2vw;
     }
 
 
@@ -1049,8 +1083,22 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
     .btn {
         font-size: 14px;
-        padding: 11px 30px;
+        padding: 11px 20px;
     }
+
+    /* Student directory page */
+    .hero-img-students img {
+        width: 100%;
+        height: 100%;
+        max-height: 500px;
+    }
+
+     /* Coming soon section */
+
+     .coming-soon-title {
+        font-size: 2.1vw;
+    }
+
 
 
 
@@ -1084,6 +1132,11 @@ input[type=checkbox]:checked~#overlay-button span:after {
     /* Agenda */
     .agenda {
         display: block !important;
+    }
+
+    .coming-soon-text {
+        margin: 5% 0 10% 0;
+        font-size: 1.8vw;
     }
 
     /* video text */
@@ -1136,6 +1189,11 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
     }
 
+    .btn {
+        font-size: 15px;
+        padding: 11px 20px;
+    }
+
     /* Footer */
 
     .logo-footer-img {
@@ -1167,11 +1225,15 @@ input[type=checkbox]:checked~#overlay-button span:after {
     }
 
     .card-selected .title-selected {
-        top: 50%;
-        left: 20%;
-        position: absolute;
-        font-size: 1vw;
-        color: white;
+        margin-top: 5%;
+        font-size: 1.5vw;
+    }
+
+    /* Student directory page */
+    .hero-img-students img {
+        width: 100%;
+        height: 100%;
+        max-height: 720px;
     }
 
 
@@ -1204,6 +1266,11 @@ input[type=checkbox]:checked~#overlay-button span:after {
     /* Agenda */
     .agenda {
         display: block !important;
+    }
+
+    .coming-soon-text {
+        margin: 10% 0 10% 0;
+        font-size: 1.8vw;
     }
 
     /* video text */
@@ -1258,6 +1325,12 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
     }
 
+
+    .btn {
+        font-size: 16px;
+        padding: 11px 20px;
+    }
+
     /* Footer */
 
     .social {
@@ -1278,11 +1351,15 @@ input[type=checkbox]:checked~#overlay-button span:after {
     }
 
     .card-selected .title-selected {
-        top: 50%;
-        left: 20%;
-        position: absolute;
-        font-size: 1vw;
-        color: white;
+        margin-top: 5%;
+        font-size: 1.4vw;
+    }
+
+    /* Student directory page */
+    .hero-img-students img {
+        width: 100%;
+        height: 100%;
+        max-height: 900px;
     }
 
 
@@ -1412,7 +1489,7 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
 .btn-innovation {
     margin-bottom: 6%;
-    
+
 }
 
 /* Agenda */

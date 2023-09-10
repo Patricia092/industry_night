@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico">
+    <link href="https://api.fontshare.com/v2/css?f=satoshi@900,301,300,901&f=anton@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0eab0f8aa6.js" crossorigin="anonymous"></script>
     <title>Fanshawe Industry Night</title>
 </head>
 
@@ -14,11 +17,11 @@
     <header>
         <div class="grid-con">
             <h2 class="hidden">Header</h2>
-            <!-- <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-span-2 xl-col-span-2">
+            <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-span-2 xl-col-span-2">
                 <a href="index.html">
-                    <img src="" alt="Fanshawe logo" width="100" height="80">
+                    <img src="images/logo_fin_gray.svg" alt="Fanshawe logo" width="170" height="100">
                 </a>
-            </div> -->
+            </div>
             <article class="col-start-4 col-end-4 m-col-start-11 m-col-end-13 l-col-span-10 xl-col-span-10 desktop">
                 <h3 class="hidden">Header Navbar Desktop</h3>
                 <nav class="flex-cont-header desktop">
@@ -26,7 +29,8 @@
                     <ul class="ul-navigation animation">
                         <li class="flex-header desktop items"><a href="index.html">Home</a></li>
                         <li class="flex-header desktop items"><a href="#">About IDP3</a></li>
-                        <li class="flex-header desktop items"><a href="#">Directory</a></li>
+                        <li class="flex-header desktop items"><a href="studentdirectory.html">Directory</a></li>
+                        <li class="flex-header desktop items"><a href="casestudy.html">Case Study</a></li>
                     </ul>
                 </nav>
             </article>
@@ -38,31 +42,85 @@
                     <ul class="ul-navigation-tablet animation-tablet">
                         <li class="flex-header tablet items"><a href="index.html">Home</a></li>
                         <li class="flex-header tablet items"><a href="#">About IDP3</a></li>
-                        <li class="flex-header tablet items"><a href="#">Directory</a></li>
+                        <li class="flex-header tablet items"><a href="studentdirectory.html">Directory</a></li>
+                        <li class="flex-header tablet items"><a href="casestudy.html">Case Study</a></li>
                     </ul>
                 </nav>
             </article>
             <!-- Mobile Menu -->
-            <!-- <div class="mobile">
+            <div class="mobile">
                 <input type="checkbox" id="overlay-input">
                 <label for="overlay-input" id="overlay-button"><span></span></label>
                 <div id="overlay">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">About IDP3</a></li>
-                        <li><a href="#">Directory</a></li>
+                        <li><a href="studentdirectory.html">Directory</a></li>
+                        <li><a href="casestudy.html">Case Study</a></li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
         </div>
     </header>
     <main>
-        <div class="student-list">
-            <!-- Student list will be generated here -->
-        </div>
-        <button id="viewMoreBtn">View More</button>
+        <section class="hero-img-students">
+            <h2 class="hidden">Hero Image</h2>
+            <picture>
+                <source media="(min-width:1400px)" srcset="images/hero-students-desk.jpg">
+                <source media="(min-width:768px)" srcset="images/hero-students-tab.jpg">
+                <source media="(min-width:900px)" srcset="images/hero-students-spacer.jpg">
+                <source media="(min-width:510px)" srcset="images/hero-students-mob.jpg">
+                <img src="images/hero-students-mob.jpg" alt="Hero image">
+            </picture>
+            <article>
+                <h3 class="title title-students">STUDENT DIRECTORY</h3>
+            </article>
+        </section>
+        <section class="grid-con">
+            <h2 class="hidden">Students List</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                <div class="student-list">
+                    <!-- Student list will be generated here -->
+                </div>
+                <div class="view-more-btn">
+                    <button id="viewMoreBtn" class="btn view-btn">View More</button>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
+    <footer class="footer-style">
+        <section class="grid-con">
+            <h2 class="hidden">Footer</h2>
+            <div class="col-span-4 m-col-start-3 m-col-end-7 l-col-start-3 l-col-end-7 xl-col-start-3 xl-col-end-7">
+                <nav class="nav-list-style">
+                    <h3 class="hidden">Footer text</h3>
+                    <ul>
+                        <li><a class="nav-list-a" href="index.html">Home</a></li>
+                        <li><a class="nav-list-a" href="#">About IDP3</a></li>
+                        <li><a class="nav-list-a" href="studentdirectory.html">Student Directory</a></li>
+                        <li><a class="nav-list-a" href="casestudy.html">Case Study</a></li>
+                        <li><a class="nav-list-a" href="#">Registration & FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div
+                class="col-span-4 m-col-start-9 m-col-end-12 l-col-start-9 l-col-end-12 xl-col-start-9 xl-col-end-12 social">
+                <div class="logo-footer ">
+                    <a href="index.html">
+                        <img src="images/logo_fin_white.svg" alt="Fanshawe logo" class="logo-footer-img">
+                    </a>
+                </div>
+                <nav >
+                    <h2 class="hidden">Footer social media icons</h2>
+                    <ul class="social-media-style">
+                        <li><a href="#" class="footer-icon"><i class="fa-brands fa-facebook-f fa-xl"></i></a></li>
+                        <li><a href="#" class="footer-icon"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                        <li><a href="#" class="footer-icon"><i class="fa-brands fa-behance fa-xl"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
         <p class="copyright"> Fanshawe Industry Night &copy; - 2023 All Rights Reserved.</p>
     </footer>
     <script src="js/studentdirectory.js"></script>

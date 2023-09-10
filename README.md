@@ -1,8 +1,8 @@
-<h1 align =“center”>Fanshawe Industry Night 2024</h1>
+<h1 align ="center">Fanshawe Industry Night 2024</h1>
 
-<h4 align =“center”>by 👾 The Surviving Minions</h4>
+<h4 align ="center">by 👾 The Surviving Minions</h4>
 
-<h4 align =“center”><img src=“https://i.imgur.com/FunDWkf.gif” alt=“Welcome to Industry Night 2024” width=“500”/> </h4>
+<h4 align ="center"><img src="https://i.imgur.com/FunDWkf.gif" alt="Welcome to Industry Night 2024" width="500"/> </h4>
 
 
 **Welcome to the SDPA Industry Night 2024 - a captivating celebration of creativity and innovation in the world of Interactive Media Design!** This event is your passport to an exciting evening filled with student projects, networking opportunities, and a sneak peek at the future of digital and performing arts.

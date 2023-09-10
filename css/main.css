@@ -12,7 +12,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #ffffff;
-    font-family: ‘Satoshi’, sans-serif;
+    font-family: 'Satoshi', sans-serif;
     color: #333333;
 }
 
@@ -32,7 +32,7 @@ h4,
 h5 {
     margin: 0px;
     padding: 0px;
-    font-family: ‘Satoshi’, sans-serif;
+    font-family: 'Satoshi', sans-serif;
 }
 
 ul {
@@ -67,6 +67,10 @@ section p {
     padding-left: 15px;
 }
 
+section p {
+    padding: 50px;
+}
+
 .btn {
     background-color: #b3272d;
     border: none;
@@ -88,7 +92,7 @@ section p {
 }
 
 .title {
-    font-family: ‘Anton’, sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 
 
@@ -97,11 +101,11 @@ section p {
 /* 2. Flexbox Items */
 
 .flex-cont-header {
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-content: right;
+    justify-content: right;
 }
 
 .flex-header {
@@ -316,6 +320,7 @@ a:hover i {
     font-size: 1.6vw;
     text-align: center;
     margin: 2% 0 5% 0;
+    padding: 0;
 }
 
 .april-style {
@@ -325,7 +330,7 @@ a:hover i {
 
 .btn-registration {
     display: flex;
-    justify-content: end;
+    justify-content: left;
     margin-right: 5%;
 }
 
@@ -343,9 +348,9 @@ a:hover i {
 
 .text-container h3 {
     margin: 0;
-    font-size: 8.5vw;
+    font-size: 10.5vw;
     color: rgba(225, 225, 225, .01);
-    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
+    background-image: url("https://yabesfilms.files.wordpress.com/2023/09/vecteezy_broken-glass-triangle-abstract-glowing-technology-background_8353770_685.jpg?resize=214%2C214");
     background-repeat: repeat;
     -webkit-background-clip: text;
     background-clip: text;
@@ -797,6 +802,10 @@ input[type=checkbox]:checked~#overlay-button span:after {
     font-size: 1.1em;
 }
 
+.video-text p {
+    padding: 15px;
+}
+
 .video-s {
     padding: 56.25% 0 0 0;
     position: relative;
@@ -863,6 +872,7 @@ input[type=checkbox]:checked~#overlay-button span:after {
     font-size: 1.8vw;
     text-align: center;
     margin: 0 5% 8% 5%;
+    padding: 0;    
 }
 
 .wrapper {
@@ -1387,6 +1397,8 @@ input[type=checkbox]:checked~#overlay-button span:after {
 
 .innovation p {
     font-size: 3vw;
+    padding: 10px;
+    margin-left: 30px;
 }
 
 .red-font {

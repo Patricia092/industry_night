@@ -18,7 +18,7 @@
             <h2 class="hidden">Header</h2>
             <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-span-2 xl-col-span-2">
                 <a href="index.html">
-                    <img src="images/logo_fin_gray.svg" alt="Fanshawe logo" width="160" height="100">
+                    <img src="images/logo_fin_gray.svg" alt="Fanshawe logo" width="170" height="100">
                 </a>
             </div>
             <article class="col-start-4 col-end-4 m-col-start-11 m-col-end-13 l-col-span-10 xl-col-span-10 desktop">
@@ -29,7 +29,6 @@
                         <li class="flex-header desktop items"><a href="index.html">Home</a></li>
                         <li class="flex-header desktop items"><a href="#">About IDP3</a></li>
                         <li class="flex-header desktop items"><a href="studentdirectory.html">Directory</a></li>
-                        <li class="flex-header desktop items"><a href="studentdirectory.html">Selected Works</a></li>
                         <li class="flex-header desktop items"><a href="casestudy.html">Case Study</a></li>
                     </ul>
                 </nav>
@@ -42,9 +41,8 @@
                     <ul class="ul-navigation-tablet animation-tablet">
                         <li class="flex-header tablet items"><a href="index.html">Home</a></li>
                         <li class="flex-header tablet items"><a href="#">About IDP3</a></li>
-                        <li class="flex-header tablet items"><a href="#">Directory</a></li>
-                        <li class="flex-header tablet items"><a href="#">Selected Works</a></li>
-                        <li class="flex-header tablet items"><a href="#">Case Study</a></li>
+                        <li class="flex-header tablet items"><a href="studentdirectory.html">Directory</a></li>
+                        <li class="flex-header tablet items"><a href="casestudy.html">Case Study</a></li>
                     </ul>
                 </nav>
             </article>
@@ -56,77 +54,93 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">About IDP3</a></li>
-                        <li><a href="#">Directory</a></li>
-                        <li><a href="#">Selected Works</a></li>
-                        <li><a href="#">Case Study</a></li>
+                        <li><a href="studentdirectory.html">Directory</a></li>
+                        <li><a href="casestudy.html">Case Study</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <h2>FANSHAWE SCHOOL OF DIGITAL & PERFORMING ARTS PRESENTS</h2>
-            <div class="text-container">
-                <h3 class="title">INDUSTRY NIGHT</h3>
-            </div>
-            <p>APRIL 2024 | The Good Foundation Inc. Theatre, Downtown Campus </p>
-            <button class="btn">REGISTRATION NOW OPEN!</button>
+        <section class="hero-img">
+            <h2 class="hidden">Hero Image</h2>
+            <picture>
+                <source media="(min-width:1400px)" srcset="images/hero-home-desk.jpg">
+                <source media="(min-width:768px)" srcset="images/hero-home-tab.jpg">
+                <source media="(min-width:900px)" srcset="images/hero-home-spacer.jpg">
+                <source media="(min-width:510px)" srcset="images/hero-home-mob.jpg">
+                <img src="images/hero-home-mob.jpg" alt="Hero image">
+            </picture>
+            <article>
+                <h3 class="fanshawe-title">FANSHAWE SCHOOL OF DIGITAL & PERFORMING ARTS PRESENTS</h3>
+                <div class="text-container">
+                    <h3 class="title title-hero-home">INDUSTRY NIGHT</h3>
+                </div>
+                <p class="date-style"> <span class="april-style">APRIL 2024</span> | The Good Foundation Inc. Theatre,
+                    Downtown Campus </p>
+                <div class="btn-registration">
+                    <button class="btn">REGISTRATION NOW OPEN!</button>
+                </div>
+            </article>
         </section>
         <section class="full-width-grid-con">
+            <h2 class="hidden">GRADUATION SHOWCASE COMING SOON</h2>
             <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
                 <article class="coming-soon">
-                    <h2 class="coming-soon-title">2024 GRADUATION SHOWCASE COMING SOON</h2>
+                    <h3 class="coming-soon-title">2024 GRADUATION SHOWCASE COMING SOON</h3>
                 </article>
             </div>
         </section>
-            
-            <section class="grid-con">
-            
-                    <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 coming-soon-text">
-                        <p>Are you an aspiring Interactive Media Design student eager to dive into the world of creativity,
-                            innovation, and professional connections? Look no further! Our upcoming Industry Night in April is
-                            your golden ticket to a night filled with knowledge, inspiration, and networking opportunities like
-                            never before.</p>
-                    </div>
-                    <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 coming-soon-text">
-                        <p>Industry Night was designed exclusively for Interactive Media Design students, with its primary
-                            purpose being ‘to bridge the gap between your academic journey and the real-world industry.’ </p>
-                            <button class="btn">LEARN MORE ABOUT IDP3</button>
-                    </div>
-              
-            </section>
-            
-           <section class="full-width-grid-con">
-            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
-                <article class="coming-soon">
-                    <h2 class="coming-soon-title">2024 GRADUATION SHOWCASE COMING SOON</h2>
-                </article>
-            </div>
-           </section>
-            
 
-        </section>
         <section class="grid-con">
-            <h2 class="hidden">Video</h3>
-                <div
-                    class="col-span-4 m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12">
-                    <div class="prom-video">
-                        <div class="video-s">
-                            <iframe src="https://player.vimeo.com/video/862688924?h=f7380982c3&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" class="video-style" title="Fanshawe Industry Night"></iframe>
-                          </div>
+            <h2 class="hidden">GRADUATION SHOWCASE COMING SOON TEXT</h2>
+            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 coming-soon-text">
+                <p>Are you an aspiring Interactive Media Design student eager to dive into the world of creativity,
+                    innovation, and professional connections? Look no further! Our upcoming Industry Night in April is
+                    your golden ticket to a night filled with knowledge, inspiration, and networking opportunities like
+                    never before.</p>
+            </div>
+            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 coming-soon-text">
+                <p>Industry Night was designed exclusively for Interactive Media Design students, with its primary
+                    purpose being ‘to bridge the gap between your academic journey and the real-world industry.’ </p>
+                <div class="btn-registration">
+                    <button class="btn btn-learn">LEARN MORE ABOUT IDP3</button>
+                </div>
+            </div>
+        </section>
+        <section class="full-width-grid-con">
+            <h2 class="hidden">GRADUATION SHOWCASE COMING SOON TEXT</h2>
+            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+                <article class="coming-soon">
+                    <h3 class="coming-soon-title">2024 GRADUATION SHOWCASE COMING SOON</h3>
+                </article>
+            </div>
+        </section>
+        <section class="grid-con video-background">
+            <h2 class="hidden">Video</h2>
+            <div class="col-span-4 m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12">
+                <div class="prom-video">
+                    <div class="video-s">
+                        <embed
+                            src="https://player.vimeo.com/video/862688924?h=f7380982c3&loop=1&title=0&byline=0&portrait=0"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" class="video-style"
+                            title="Fanshawe Industry Night" />
                     </div>
                 </div>
-        </section>
-        <section class="grid-con">
-            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6">
+            </div>
+            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 video-text-style agenda">
                 <article class="video-text">
+                    <h2 class="hidden">Video Text</h2>
                     <p>GET READY TO BE INSPIRED, INFORMED, AND CONNECTED LIKE NEVER BEFORE.</p>
-                    <p> A MYRIAD OF ACTIVITIES AWAIT.</p>
+                    <p class=" activities red-font"> A MYRIAD OF ACTIVITIES AWAIT.</p>
+                    <div class="btn-registration">
+                        <button class="btn btn-activities">RSVP AND SEE THE AGENDA</button>
+                    </div>
                 </article>
             </div>
-            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6">
+            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 video-text-style1 agenda">
                 <article class="video-text">
+                    <h2 class="hidden">Video Content</h2>
                     <p>
                         Keynote Presentations - Gain insights from renowned industry figures who have blazed
                         trails in interactive media design.
@@ -148,48 +162,80 @@
                     </p>
                 </article>
             </div>
-        </section>
-        <section class="grid-con">
-            <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
-                <h2>Just a link to sign up to the eventbright</h2>
+            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 video-text-style-mobile mobile">
+                <article class="video-text">
+                    <h2 class="hidden">Video Text</h2>
+                    <p>GET READY TO BE INSPIRED, INFORMED, AND CONNECTED LIKE NEVER BEFORE.</p>
+                    <p class=" activities red-font"> A MYRIAD OF ACTIVITIES AWAIT.</p>
+                    
+                </article>
+            </div>
+            <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 video-text-style-mobile1 mobile ">
+                <article class="video-text">
+                    <h2 class="hidden">Video Content</h2>
+                    <p>
+                        Keynote Presentations - Gain insights from renowned industry figures who have blazed
+                        trails in interactive media design.
+                    </p>
+                    <p>
+                        Panel Discussions - Engage in thought-provoking conversations about emerging trends
+                        and challenges.
+                    </p>
+                    <p>
+                        Portfolio Showcase - Display your best work and receive constructive feedback from
+                        experts.
+                    </p>
+                    <p>
+                        Networking Opportunities - Connect with mentors, potential employers, and
+                        collaborators.
+                    </p>
+                    <p>
+                        Q&A Sessions - Get answers to your burning questions from experts in the field.
+                    </p>
+
+                    <div class="btn-registration1">
+                        <button class="btn btn-activities-1">RSVP AND SEE THE AGENDA</button>
+                    </div>
+                </article>
             </div>
         </section>
-       
-
         <section class="grid-con">
+            <h2 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 selected-title">Selected Works</h2>
+            <p class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 selected-text">These remarkable works exemplify the talent and passion of our students who have consistently pushed the boundaries of possibility throughout their academic journey.</p>
+
             <div class="col-span-4 m-col-span-12 l-col-span-13 xl-col-span-13 wrapper">
                 <i id="left" class="fa-solid fa-angle-left icon"></i>
                 <ul class="carousel">
                     <li class="card-selected">
-                        <div class="img"><img src="images/bundle_1.png" alt="img" draggable="false"></div>
+                        <div class="img"><img src="images/selected-work-1.jpg" alt="img" draggable="false"></div>
+                        <div class="title-selected title-selected-mobile">
+                            <h3>Project Title</h3>
+                            <p>Student name - portfolio link</p>
+                        </div>
+                    </li>
+                    <li class="card-selected">
+                        <div class="img"><img src="images/selected-work-2.jpg" alt="img" draggable="false"></div>
                         <div class="title-selected">
                             <h3>Project Title</h3>
                             <p>Student name - portfolio link</p>
                         </div>
                     </li>
                     <li class="card-selected">
-                        <div class="img"><img src="images/bundle_1.png" alt="img" draggable="false"></div>
+                        <div class="img"><img src="images/selected-work-3.jpg" alt="img" draggable="false"></div>
                         <div class="title-selected">
                             <h3>Project Title</h3>
                             <p>Student name - portfolio link</p>
                         </div>
                     </li>
                     <li class="card-selected">
-                        <div class="img"><img src="images/bundle_1.png" alt="img" draggable="false"></div>
+                        <div class="img"><img src="images/selected-work-1.jpg" alt="img" draggable="false"></div>
                         <div class="title-selected">
                             <h3>Project Title</h3>
                             <p>Student name - portfolio link</p>
                         </div>
                     </li>
                     <li class="card-selected">
-                        <div class="img"><img src="images/bundle_1.png" alt="img" draggable="false"></div>
-                        <div class="title-selected">
-                            <h3>Project Title</h3>
-                            <p>Student name - portfolio link</p>
-                        </div>
-                    </li>
-                    <li class="card-selected">
-                        <div class="img"><img src="images/bundle_1.png" alt="img" draggable="false"></div>
+                        <div class="img"><img src="images/selected-work-2.jpg" alt="img" draggable="false"></div>
                         <div class="title-selected">
                             <h3>Project Title</h3>
                             <p>Student name - portfolio link</p>
@@ -199,29 +245,35 @@
                 <i id="right" class="fa-solid fa-angle-right icon"></i>
             </div>
         </section>
-        <section class="grid-con">
+        <section class="grid-con innovation-style">
+            <h2 class="hidden">Interactive Media Design Section</h2>
             <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
-                <article>
-                    <h2>Innovation. Practicality. Relevance. Collaboration.
-                    </h2>
-                    <p>This is Interactive Media Design.</p>
+                <article class="innovation">
+                    <h3 class="hidden">Interactive Media Design Text</h3>
+                    <p>Innovation. Practicality. Relevance. Collaboration.
+                    </p>
+                    <p>This is <span class="red-font">Interactive Media Design.</span></p>
                 </article>
-                <button class="btn">WHAT DO OUR STUDENTS DO IN IDP3?</button>
+                <button class="btn btn-innovation">WHAT DO OUR STUDENTS DO IN IDP3?</button>
             </div>
         </section>
 
         <section class="grid-con">
+            <h2 class="hidden">Testimonials Section</h2>
             <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
                 <div class="testimonial-container">
-                    <h2>TESTIMONIALS</h2>
+                    <h3>TESTIMONIALS</h3>
                     <div class="testimonial">
                         <p class="testimonial-text"></p>
                         <p class="testimonial-author"></p>
                     </div>
                     <article class="testimonial-btn-counter">
+                        <h4 class="hidden">Testimonial buttons</h4>
                         <div class="testimonial-buttons">
-                            <button id="prevBtn" class="btn-testimonial"><i class="fa-solid fa-arrow-left fa-lg"></i></button>
-                            <button id="nextBtn" class="btn-testimonial"><i class="fa-solid fa-arrow-right fa-lg"></i></button>
+                            <button id="prevBtn" class="btn-testimonial"><i
+                                    class="fa-solid fa-arrow-left fa-lg"></i></button>
+                            <button id="nextBtn" class="btn-testimonial"><i
+                                    class="fa-solid fa-arrow-right fa-lg"></i></button>
                         </div>
                         <div class="testimonial-counter">
                             <div class="counter-square"></div>
@@ -237,28 +289,28 @@
 
     <footer class="footer-style">
         <section class="grid-con">
-            <div class="col-span-4 m-col-start-3 m-col-end-6 l-col-start-3 l-col-end-6 xl-col-start-3 xl-col-end-6">
+            <h2 class="hidden">Footer</h2>
+            <div class="col-span-4 m-col-start-3 m-col-end-7 l-col-start-3 l-col-end-7 xl-col-start-3 xl-col-end-7">
                 <nav class="nav-list-style">
+                    <h3 class="hidden">Footer text</h3>
                     <ul>
                         <li><a class="nav-list-a" href="index.html">Home</a></li>
-                        <li><a class="nav-list-a" href="aboutus.html">About Us</a></li>
-                        <li><a class="nav-list-a" href="products.html">Products</a></li>
-                        <li><a class="nav-list-a" href="#">Recipes</a></li>
+                        <li><a class="nav-list-a" href="#">About IDP3</a></li>
+                        <li><a class="nav-list-a" href="studentdirectory.html">Student Directory</a></li>
+                        <li><a class="nav-list-a" href="casestudy.html">Case Study</a></li>
+                        <li><a class="nav-list-a" href="#">Registration & FAQ</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="col-span-4 m-col-start-6 m-col-end-9 l-col-start-6 l-col-end-9 xl-col-start-6 xl-col-end-9">
-                <nav class="nav-list-style">
-                    <ul>
-                        <li><a class="nav-list-a" href="index.html">Home</a></li>
-                        <li><a class="nav-list-a" href="aboutus.html">About Us</a></li>
-                        <li><a class="nav-list-a" href="products.html">Products</a></li>
-                        <li><a class="nav-list-a" href="#">Recipes</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-span-4 m-col-start-9 m-col-end-12 l-col-start-9 l-col-end-12 xl-col-start-9 xl-col-end-12">
+            <div
+                class="col-span-4 m-col-start-9 m-col-end-12 l-col-start-9 l-col-end-12 xl-col-start-9 xl-col-end-12 social">
+                <div class="logo-footer ">
+                    <a href="index.html">
+                        <img src="images/logo_fin_white.svg" alt="Fanshawe logo" class="logo-footer-img">
+                    </a>
+                </div>
                 <nav >
+                    <h2 class="hidden">Footer social media icons</h2>
                     <ul class="social-media-style">
                         <li><a href="#" class="footer-icon"><i class="fa-brands fa-facebook-f fa-xl"></i></a></li>
                         <li><a href="#" class="footer-icon"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
@@ -267,9 +319,7 @@
                 </nav>
             </div>
         </section>
-        
-                <p class="copyright"> Fanshawe Industry Night &copy; - 2023 All Rights Reserved.</p>
-         
+        <p class="copyright"> Fanshawe Industry Night &copy; - 2023 All Rights Reserved.</p>
     </footer>
     <script src="js/main.js"></script>
 </body>

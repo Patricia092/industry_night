@@ -67,9 +67,7 @@ section p {
     padding-left: 15px;
 }
 
-section p {
-    padding: 50px;
-}
+
 
 .btn {
     background-color: #b3272d;
@@ -500,9 +498,6 @@ a:hover i {
 
 
 /* ?. Case Study Page */
-
-/* Style Profile Picture and Background Information */
-
 /* hero case study */
 #case-study {
     padding-top: 150px;
@@ -510,9 +505,26 @@ a:hover i {
 
 .hero-title {
     text-align: center;
-    padding-top: 200px;
-    margin-bottom: 150px;
+    padding-top: 280px;
+    margin-bottom: 100px;
     position: relative;
+}
+
+.main-img-project {
+    text-align: center;
+    padding: 50px;
+}
+
+.sub-img-1 {
+    text-align: center;
+}
+
+.sub-img-2 {
+    text-align: center;
+}
+
+.sub-img-3 {
+    text-align: center;
 }
 
 /* Styles Hero image 2*/
@@ -523,7 +535,7 @@ a:hover i {
     background-position: center center;
     opacity: 100%;
     position: absolute;
-    top: 148px;
+    top: 358px;
     left: 0;
     width: 100%;
     height: 304px;
@@ -533,20 +545,14 @@ a:hover i {
 }
 
 .text-container-cs {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 2% 0 0 0;
 }
 
 .text-container-cs h3 {
     margin: 0;
     font-size: 8vw;
-    color: rgba(225, 225, 225, .01);
-    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: animate 15s ease-in-out infinite;
+    color: #b3272d;
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
@@ -560,7 +566,7 @@ a:hover i {
     background-position: center center;
     opacity: 100%;
     position: absolute;
-    top: 125px;
+    top: 125;
     left: 0;
     width: 100%;
     height: 441px;
@@ -569,7 +575,6 @@ a:hover i {
     background-position-y: center;
 }
 
-
 .bipotx {
     display: flex;
     align-self: center;
@@ -577,8 +582,7 @@ a:hover i {
 
 /* Project Description Section */
 .project-des-con {
-    border-top: 1px solid #707070;
-    border-bottom: 1px solid #707070;
+    border: 1px solid #707070;
     margin-bottom: 20px;
     overflow: scroll;
 }
@@ -633,15 +637,21 @@ a:hover i {
 }
 
 .over-hero {
-    width: 1000px;
-    font-size: 50px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 270%; 
-    left: 60%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.2); 
-    padding: 10px;
+    background-color: #707070;
+    height: 175px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.btn-action-con{
+    text-align: center;
+}
+
+.btn-action {
+    width: 90vw;
+    height: 44px;
+    font-size: 14px;
 }
 
 .team-list {
@@ -987,6 +997,7 @@ input[type=checkbox]:checked~#overlay-button span:after {
 }
 
 
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
@@ -1052,10 +1063,47 @@ input[type=checkbox]:checked~#overlay-button span:after {
         padding: 11px 30px;
     }
 
+     /* Case Study */
+    .over-hero {
+        width: 80vw;
+        height: 10vw;
+        font-size: 2vw;
+        color: #FFFFFF;
+        position: absolute;
+        top: 360%; 
+        left: 60%;
+        transform: translate(-40%, -90%);
+        background-color: rgba(0, 0, 0, 0.2); 
+        margin-top: 120px;
+    }
 
+    .btn-action {
+        position: absolute;
+        top: 380%; 
+        left: 20%;
+        transform: translate(-50%, -150%);
+        width: 30vw;
+        height: 44px;
+        font-size: 14px;
+    }
 
+    .hero-title::before {
+        top: 26vw;
+    }   
 
+    .hero-title {
+        padding-top: 300px;
+    }
 
+    .p-third-text{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .project-des-con {
+        border-top: 1px solid #707070;
+        border-bottom: 1px solid #707070;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1174,6 +1222,42 @@ input[type=checkbox]:checked~#overlay-button span:after {
         color: white;
     }
 
+    /* Case Study */
+    .over-hero {
+        width: 80vw;
+        font-size: 2vw;
+        color: #FFFFFF;
+        position: absolute;
+        top: 400%; 
+        left: 30%;
+        transform: translate(-40%, -50%);
+        background-color: rgba(0, 0, 0, 0.2); 
+        margin-top: 150px;
+    }
+
+    .hero-title::before {
+        top: 282px;
+    }    
+
+    .p-third-text{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .project-des-con {
+        border-top: 1px solid #707070;
+        border-bottom: 1px solid #707070;
+    }
+
+    .btn-action {
+        position: absolute;
+        top: 400%; 
+        left: 20%;
+        transform: translate(-50%, -150%);
+        width: 30vw;
+        height: 44px;
+        font-size: 14px;
+    }
 
 }
 
@@ -1285,7 +1369,27 @@ input[type=checkbox]:checked~#overlay-button span:after {
         color: white;
     }
 
+     /* Case Study */
+    .over-hero {
+        width: 1000px;
+        font-size: 40px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 500%; 
+        left: 60%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.2); 
+        margin-top: 370px;
+    }
 
+    .hero-title::before {
+        top: 282px;
+    }   
+
+    .project-des-con {
+        border-top: 1px solid #707070;
+        border-bottom: 1px solid #707070;
+    }
 }
 
 /* End of Media Queries  */
